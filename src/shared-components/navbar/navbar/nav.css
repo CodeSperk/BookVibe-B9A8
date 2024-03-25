@@ -1,0 +1,5 @@
+.nav-list .active{
+  border: 1px solid var(--clr-accent);
+  border-radius: 8px;
+  color:var(--clr-accent);
+}
