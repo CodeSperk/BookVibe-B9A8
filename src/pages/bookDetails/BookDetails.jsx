@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { handleReadList, handleWishList } from "../../utils/localStorage";
+import { saveReadBooks, saveWishList } from "../../utils/localStorage";
 import { useEffect, useState } from "react";
 
 const BookDetails = () => {
@@ -22,16 +22,16 @@ const BookDetails = () => {
     }
   },[books, id]);
 
-  const {bookId, image, bookName, author, category, review, tags, totalPages, publisher, yearOfPublishing, rating} = book;
+  const {bookId, image, bookName, author, category, review, totalPages, publisher, yearOfPublishing, rating} = book;
 
 
   return (
     <section className="mx-auto max-w-7xl px-4 md:px-8 lg:px-10 2xl:px-14 mb-16 md:mb-20 lg:mb-24 flex flex-col md:flex-row gap-8 md:gap-12 justify-between">
-     <div className="bg-[var(--bg-primary)] p-12 md:p-20 rounded-xl lg:rounded-2xl">
-      <img src={image} alt={bookName} className="w-full"/>
+     <div className="bg-[var(--bg-primary)] py-12 lg:py-20 rounded-xl lg:rounded-2xl px-4 md:px-8 xl:px-20 md:w-1/2 flex justify-center items-center">
+      <img src={image} alt={bookName} className="h-full w-auto"/>
      </div>
       
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between md:w-1/2">
         <h2>{bookName}</h2>
         <h5 className="font-medium mt-3">By : {author}</h5>
         <h4 className="text-[var(--clr-paragraph)] border-y-2 border-solid border-[var(--bg-primary)] py-4 my-6">{category}</h4>
@@ -67,9 +67,9 @@ const BookDetails = () => {
        
 
       <div className="flex gap-6">
-      <button className="py-3 px-6 hover:bg-[var(--bg-primary)] border-2 border-[var(--bg-primary)] text-[var(--clr-heading)] rounded-lg font-semibold duration-300 ">Read</button>
+      <button onClick={()=> saveReadBooks(bookId)} className="py-3 px-6 hover:bg-[var(--bg-primary)] border-2 border-[var(--bg-primary)] text-[var(--clr-heading)] rounded-lg font-semibold duration-300 ">Read</button>
 
-      <button className="py-3 px-6 bg-[var(--clr-accent)] hover:bg-transparent text-[var(--clr-white)] border-2 border-[var(--bg-primary)] hover:text-[var(--clr-heading)] rounded-lg font-semibold duration-300 "   onClick={()=> handleWishList(id)}>Wishlist</button>
+      <button className="py-3 px-6 bg-[var(--clr-accent)] hover:bg-transparent text-[var(--clr-white)] border-2 border-[var(--bg-primary)] hover:text-[var(--clr-heading)] rounded-lg font-semibold duration-300 "   onClick={()=> saveWishList(bookId)}>Wishlist</button>
      
       </div>
       </div>
