@@ -25,14 +25,14 @@ const Nav = () => {
 
   const menuList = (
     <>
-      <List className="flex lg:gap-4 lg:flex-row nav-list mb-10 lg:mb-0 font-work-sans">
-        <NavLink to="/">
+      <List className="flex lg:gap-4 lg:flex-row nav-list mb-10 lg:mb-0 font-work-sans nav-list">
+        <NavLink to="/" className="item">
           <ListItem>Home</ListItem>
         </NavLink>
-        <NavLink to="/listedBooks">
+        <NavLink to="/listedBooks" className="item">
           <ListItem>Listed Books</ListItem>
         </NavLink>
-        <NavLink to="/pagesToRead">
+        <NavLink to="/pagesToRead" className="item">
           <ListItem>Page to Read</ListItem>
         </NavLink>
       </List>
@@ -72,12 +72,8 @@ const Nav = () => {
           {menuList}
 
           <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
-            <Button variant="outlined" size="sm" color="blue-gray" fullWidth>
-              Log In
-            </Button>
-            <Button variant="gradient" size="sm" fullWidth>
-              Sign In
-            </Button>
+          <button className="btn w-full lg:w-fit">Sign In</button>
+            <button className="btn btn-2 w-full lg:w-fit">Sign Up</button>
           </div>
         </Collapse>
       </nav>
