@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { saveReadBooks, saveWishList } from "../../utils/localStorage";
 import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 const BookDetails = () => {
   const books = useLoaderData();
@@ -73,7 +74,7 @@ const BookDetails = () => {
      
       </div>
       </div>
-     
+      <ToastContainer />
     </section>
   );
 };
