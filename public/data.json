@@ -7,7 +7,7 @@
     "review": "Ramit Sethi's 'Why Do You Hate Money?' is a groundbreaking exploration into personal finance, challenging traditional paradigms and offering fresh, actionable insights to manage money effectively. With engaging anecdotes and practical advice, this book empowers readers to take control of their financial future.",
     "totalPages": 320,
     "rating": 4.5,
-    "category": "Personal Finance",
+    "category": "Finance",
     "tags": ["Finance", "Insights"],
     "publisher": "Simon & Schuster",
     "yearOfPublishing": 2023
@@ -46,20 +46,20 @@
     "review": "Phil Ryken's 'Loving Jesus More' is a profound exploration of Christian devotion, inviting readers into a deeper relationship with Christ. Through heartfelt reflections and practical guidance, Ryken inspires believers to prioritize their love for Jesus in every aspect of their lives.",
     "totalPages": 240,
     "rating": 4.6,
-    "category": "Religious Studies",
+    "category": "Religion",
     "tags": ["Devotion", "Inspiring"],
     "publisher": "Crossway",
     "yearOfPublishing": 2019
   },
   {
     "bookId": "5",
-    "bookName": "The Dating Playbook for Men",
+    "bookName": "The Dating",
     "author": "Andrew Ferebee",
     "image": "https://i.ibb.co/j5cMgS3/the-dating-playbook-for-men.png",
     "review": "Andrew Ferebee's 'The Dating Playbook for Men' is an invaluable guide for men seeking to enhance their dating lives. With practical strategies and insightful advice, Ferebee empowers readers to navigate the complexities of modern relationships with confidence and authenticity.",
     "totalPages": 272,
     "rating": 4.4,
-    "category": "Relationships",
+    "category": "Romantic",
     "tags": ["Dating", "Confidence"],
     "publisher": "Knowledge for Men",
     "yearOfPublishing": 2015

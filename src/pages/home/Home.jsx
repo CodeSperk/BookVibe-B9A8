@@ -6,12 +6,11 @@ const Home = () => {
   const {data} = useBooksData();
   
   return (
-    <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-10 2xl:px-14">
+    <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-10 2xl:px-14 mb-16 md:mb-20 lg:mb-28">
       <Banner></Banner>
 
       <main>
         <Books books={data}></Books>
-        
       </main>
       
 

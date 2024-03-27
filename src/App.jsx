@@ -4,11 +4,13 @@ import Home from "./pages/home/Home";
 import Listed from "./pages/listed/Listed";
 import ToRead from "./pages/toRead/ToRead";
 import BookDetails from "./pages/bookDetails/BookDetails";
+import ErrorPage from "./pages/errorPage/ErrorPage";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <Layout></Layout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
@@ -16,11 +18,13 @@ export const router = createBrowserRouter([
       },
       {
         path:"/listedBooks",
-        element:<Listed></Listed>
+        element:<Listed></Listed>,
+        loader:()=> fetch("/data.json")
       },
       {
         path:"/pagesToRead",
-        element:<ToRead></ToRead>
+        element:<ToRead></ToRead>,
+        loader:()=> fetch("/data.json")
       },
       {
         path:"/bookDetails/:id",

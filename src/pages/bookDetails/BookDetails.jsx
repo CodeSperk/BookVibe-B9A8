@@ -32,7 +32,7 @@ const BookDetails = () => {
      </div>
       
       <div className="flex flex-col justify-between md:w-1/2">
-        <h2>{bookName}</h2>
+        <h3>{bookName}</h3>
         <h5 className="font-medium mt-3">By : {author}</h5>
         <h4 className="text-[var(--clr-paragraph)] border-y-2 border-solid border-[var(--bg-primary)] py-4 my-6">{category}</h4>
        
@@ -73,18 +73,7 @@ const BookDetails = () => {
      
       </div>
       </div>
-      {/* 
-.btn:hover{
-  background:#0f6003;
-  border-radius: 12px;
-}
-.btn-2{
-  background: var(--clr-accent-2);
-  border: 2px solid var(--clr-accent-2);
-}
-.btn-2:hover{
-  background:#256a72;
-} */}
+     
     </section>
   );
 };

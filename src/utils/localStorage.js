@@ -18,11 +18,20 @@ const getStoredReadBooks = () => {
 
 const saveReadBooks = (id) => {
   const storedReadBooks = getStoredReadBooks();
+  const storedWishList = getStoredWishList();
   const isExistInReadList = storedReadBooks.find(bookId=> bookId === id);
+  const isExistInWishList = storedWishList.find(bookId => bookId === id);
 
   if(!isExistInReadList){
     storedReadBooks.push(id);
     localStorage.setItem("read-books", JSON.stringify(storedReadBooks));
+  }
+
+  // if new read id exist in the wish list
+  if(isExistInWishList){
+    const index = storedWishList.indexOf(id);
+    storedWishList.splice(index, 1);
+    localStorage.setItem("books-wishList", JSON.stringify(storedWishList));
   }
 }
 
@@ -40,4 +49,4 @@ const saveWishList = (id) => {
 }
 
 
-export  {saveReadBooks, saveWishList}
+export  {saveReadBooks, saveWishList, getStoredWishList, getStoredReadBooks }
