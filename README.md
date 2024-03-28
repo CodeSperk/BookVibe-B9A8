@@ -1,8 +1,13 @@
-# React + Vite
+# Book vibe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Site](https://www.bookwormhaven.com)
 
-Currently, two official plugins are available:
+## Features and Characteristics
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Interactive Navbar**: A persistent navbar featuring the website logo, essential menu items like Home, Listed Books, and Pages to Read, and user options for Sign In and Sign Up.
+
+- **Comprehensive Book Details**: Each book card provides detailed information including book name, author, category, tags, total pages, publisher, year of publishing, and rating.
+
+- **Dynamic Routing**: Clicking on a book card navigates users to the Book Details page, where they can view in-depth information about the selected book and add it to their Read or Wishlist with interactive buttons.
+
+- **Responsive Design**: Ensures a seamless user experience across various devices including desktops and mobile devices, optimizing readability and usability.
