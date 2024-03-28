@@ -1,8 +1,10 @@
 # Book vibe
 
-[Live Site](https://www.bookwormhaven.com)
+[Live Site](https://book-vibe-b9a8.vercel.app)
 
 ## Features and Characteristics
+
+- **Figma-Inspired Design**: Emulates the aesthetic of the Figma design, with a visually pleasing color palette and relevant imagery sourced from reputable online resources.
 
 - **Interactive Navbar**: A persistent navbar featuring the website logo, essential menu items like Home, Listed Books, and Pages to Read, and user options for Sign In and Sign Up.
 
