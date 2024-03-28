@@ -25,7 +25,7 @@ const Nav = () => {
 
   const menuList = (
     <>
-      <List className="flex lg:gap-4 lg:flex-row nav-list mb-10 lg:mb-0 font-work-sans nav-list">
+      <List className="flex lg:gap-3 lg:flex-row nav-list mb-10 lg:mb-0 font-work-sans nav-list">
         <NavLink to="/" className="item">
           <ListItem>Home</ListItem>
         </NavLink>
@@ -34,6 +34,12 @@ const Nav = () => {
         </NavLink>
         <NavLink to="/pagesToRead" className="item">
           <ListItem>Page to Read</ListItem>
+        </NavLink>
+        <NavLink to="/faq" className="item">
+          <ListItem>FAQ</ListItem>
+        </NavLink>
+        <NavLink to="/contact" className="item">
+          <ListItem>Contact</ListItem>
         </NavLink>
       </List>
     </>
