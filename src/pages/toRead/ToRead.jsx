@@ -33,7 +33,7 @@ const ToRead = () => {
 
   return (
     <section className="mx-auto max-w-7xl px-4 md:px-8 lg:px-10 2xl:px-14 mb-16 md:mb-20 lg:mb-28  rounded-xl">
-      <ResponsiveContainer width="100%" className="p-6 lg:p-16 bg-[var(--bg-primary)] rounded-xl min-h-[600px]">
+      <ResponsiveContainer width="100%"  className="p-6 lg:p-16 bg-[var(--bg-primary)] rounded-xl min-h-[550px]">
       <BarChart data={readList}>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="bookName" className="text-[10px]"/>
