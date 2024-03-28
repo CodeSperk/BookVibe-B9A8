@@ -33,7 +33,7 @@ const ListedBookCard = ({ book }) => {
       </div>
 
       <div className="flex flex-col justify-between w-full md:w-3/5 lg:w-3/4">
-        <h3>{bookName}</h3>
+        <h3 className="font-playfair">{bookName}</h3>
         <h5 className="font-medium my-4">By : {author}</h5>
 
         <div className="flex flex-col lg:flex-row gap-4">

@@ -7,8 +7,7 @@ const Chart = ({book}) => {
 console.log(data);
   return (
     <div>
-    
-      <BarChart width={400} height={200} data={data}>
+      <BarChart width={400} height={200} data={data} className='font-inter'>
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis dataKey="name" />
         <YAxis />

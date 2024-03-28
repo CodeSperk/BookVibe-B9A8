@@ -33,7 +33,7 @@ const BookDetails = () => {
      </div>
       
       <div className="flex flex-col justify-between md:w-1/2">
-        <h3>{bookName}</h3>
+        <h3 className="font-playfair">{bookName}</h3>
         <h5 className="font-medium mt-3">By : {author}</h5>
         <h4 className="text-[var(--clr-paragraph)] border-y-2 border-solid border-[var(--bg-primary)] py-4 my-6">{category}</h4>
        
